@@ -31,7 +31,7 @@ class Queue {
     
     // Get the front element.
     public int peek() {
-       
+        return obj1.peek();
     }
     
     // Return whether the queue is empty.
