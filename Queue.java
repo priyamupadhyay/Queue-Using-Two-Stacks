@@ -5,10 +5,14 @@ import java.io.*;
 import java.util.*;
 
 class Queue {
+    private Stack<Integer> obj1;
+    private Stack<Integer> obj2;
 
     public Queue() {
-        
+        obj1=new Stack<Integer>();
+        obj2=new Stack<Integer>();
     }
+
     // Push element x to the back of queue.
     public void enqueue(int x) {
         
@@ -35,6 +39,8 @@ class Queue {
     }
     
     public static void main(String[] args) {
+
+        Queue queue = new Queue();
         
     }
 }
