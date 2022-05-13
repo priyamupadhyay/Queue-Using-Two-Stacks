@@ -45,8 +45,20 @@ class Queue {
     }
     
     public static void main(String[] args) {
-
+        Scanner scan = new Scanner(System.in);
         Queue queue = new Queue();
+        int queries = Integer.parseInt(scan.nextLine());
+        for(int i = 0; i < queries; i++) {
+            String input = scan.nextLine();
+            if (input.charAt(0) == '1') {
+                String[] tokens = input.split(" ");
+                queue.enqueue(Integer.parseInt(tokens[1]));
+            } else if (input.charAt(0) == '2') {
+                queue.dequeue();
+            } else if (input.charAt(0) == '3') {
+                System.out.println(queue.peek());
+            } 
+        }
 
     }
 }
